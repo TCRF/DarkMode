@@ -43,31 +43,31 @@
 /* Vector Menu SVGs */
 .vectorTabs #ca-watch.icon a 
 {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/vector-watch.svg");
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/vector-watch.svg");
 }
 .vectorTabs #ca-unwatch.icon a 
 {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/vector-watch-hover.svg");
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/vector-watch-hover.svg");
 }
 .vectorTabs #ca-watch.icon a:hover 
 {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/vector-unwatch.svg");
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/vector-unwatch.svg");
 }
 .vectorTabs #ca-unwatch.icon a:hover 
 {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/vector-unwatch.svg");
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/vector-unwatch.svg");
 }
 .vectorTabs #ca-watch.icon a:focus 
 {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/vector-watch.svg");
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/vector-watch.svg");
 }
 .vectorTabs #ca-unwatch.icon a:focus 
 {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/vector-watch-hover.svg");
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/vector-watch-hover.svg");
 }
 .vectorMenu h3 span::after 
 {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/more-dropdown.svg");
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/more-dropdown.svg");
 }
 /* "More" vectormenu option */
 .vectorMenu h3 span 
