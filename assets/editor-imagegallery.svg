@@ -1,0 +1,8 @@
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+ <title>image gallery</title>
+
+ <g>
+  <title>Layer 1</title>
+  <path fill="#e5e5e5" id="svg_1" d="m3,5a2,2 0 0 0 -2,2l0,10a2,2 0 0 0 2,2l14,0a2,2 0 0 0 2,-2l0,-10a2,2 0 0 0 -2,-2l-14,0zm0,11l3.5,-4.5l2.5,3l3.5,-4.5l4.5,6l-14,0zm13,-14a2,2 0 0 1 2,2l-16,0a2,2 0 0 1 2,-2l12,0z"/>
+ </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+ <title>table</title>
+
+ <g>
+  <title>Layer 1</title>
+  <path fill="#e5e5e5" id="svg_1" d="m2,2a2,2 0 0 0 -2,2l0,12a2,2 0 0 0 2,2l16,0a2,2 0 0 0 2,-2l0,-12a2,2 0 0 0 -2,-2l-16,0zm0,4l7,0l0,4l-7,0l0,-4zm0,10l0,-4l7,0l0,4l-7,0zm16,0l-7,0l0,-4l7,0l0,4zm0,-6l-7,0l0,-4l7,0l0,4z"/>
+ </g>
+</svg>

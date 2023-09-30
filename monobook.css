@@ -1,0 +1,83 @@
+/* TCRF.net - Dark Monobook-specific CSS */
+/* Version: Gamma 1.0.3 */
+
+:root {
+ --bg-dark: hsl(120, 2%, 19%);
+ 
+ --dark-5: hsl(0, 0%, 5%);
+ --dark-10: hsl(0, 0%, 10%);
+ --dark-15: hsl(0, 0%, 15%);
+ --dark-20: hsl(0, 0%, 20%);
+ --dark-25: hsl(0, 0%, 25%);
+ --dark-30: hsl(0, 0%, 30%);
+ --dark-35: hsl(0, 0%, 35%);
+ --dark-40: hsl(0, 0%, 40%);
+ --dark-45: hsl(0, 0%, 45%);
+ --dark-50: hsl(0, 0%, 50%);
+ --dark-55: hsl(0, 0%, 55%);
+
+ --blue: hsl(220, 100%, 66%);
+ --lightblue: hsl(220, 100%, 80%);
+
+ --red: hsl(1, 100%, 66%);
+ --lightred: hsl(0, 70%, 70%);
+
+ --diff-red: hsl(1, 100%, 66%);
+ --diff-green: hsl(120, 100%, 66%);
+ 
+ --darkgreen: hsl(120, 50%, 40%);
+ --green: hsl(120, 100%, 66%);
+ --lightgreen: hsl(120, 100%, 87%);
+
+ --orange: hsl(30, 100%, 55%);
+ 
+ --lightyellow: hsl(45, 100%, 50%);
+ --yellow: hsl(45, 50%, 20%);
+
+ --white-90: hsl(0, 0%, 90%);
+
+ --border-radius-2: 2px;
+ --border-dark-45: 1px solid var(--dark-45);
+}
+
+/* Monobook page tabs */
+.pBody 
+{
+    background-color: var(--dark-15);
+    border: var(--border-dark-45);
+}
+.skin-monobook input#searchInput 
+{
+    background-color: var(--dark-35);
+    margin-bottom: 4px;
+}
+#p-cactions li.selected 
+{
+    border-color: var(--dark-45);
+}
+#p-cactions li 
+{
+    background-color: var(--dark-20);
+    border-color: var(--dark-45);
+}
+#p-cactions li.selected a 
+{
+    background-color: var(--dark-25);
+}
+#p-cactions li a 
+{
+    background-color: var(--dark-20);
+    color: var(--lightblue);
+}
+
+/* Recent changes filter buttons fix for Monobook */
+.oo-ui-buttonElement-framed > .oo-ui-buttonElement-button 
+{
+    background-image: none;
+    background-color: var(--dark-35) !important;
+    border: var(--border-dark-45);
+}
+.oo-ui-tagItemWidget 
+{
+    background-image: none;
+}

@@ -1,0 +1,9 @@
+<svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" overflow="visible" d="m10.52,1.412l4.293,0l0,9.257l-4.293,0l0,-9.257z" fill="#4c4c4c"/>
+  <path id="svg_2" overflow="visible" d="m0.683,0.862l14.633,0l0,10.278l-14.633,0l0,-10.278z" stroke-width="1.367" stroke="#e5e5e5" fill="none"/>
+  <path id="svg_3" overflow="visible" d="m8.406,2.22l-0.844,0.842l2.282,2.25l-5.72,0l0,1.188l5.782,0l-2.28,2.28l0.843,0.845l3.25,-3.25l0.405,-0.406l-0.406,-0.44l-3.314,-3.31l0.002,0.001z" fill="#e5e5e5"/>
+ </g>
+</svg>

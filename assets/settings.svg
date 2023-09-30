@@ -1,0 +1,14 @@
+<svg width="20.000000000000004" height="20.000000000000004" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>settings</title>
+
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <path fill="#e5e5e5" id="a" d="m11.62502,0l-3,0l-1,6.5l5,0m0,7l-5,0l1,6.5l3,0"/>
+   <use fill="#e5e5e5" id="svg_2" x="0" y="0" transform="rotate(45, 10.125, 10)" xlink:href="#a"/>
+   <use fill="#e5e5e5" id="svg_3" x="0" y="0" transform="rotate(90, 10.125, 10)" xlink:href="#a"/>
+   <use fill="#e5e5e5" id="svg_4" x="0" y="0" transform="rotate(135, 10.125, 10)" xlink:href="#a"/>
+  </g>
+  <path fill="#e5e5e5" id="svg_5" d="m10,2.5a7.5,7.5 0 0 0 0,15a7.5,7.5 0 0 0 0,-15l0,4a3.5,3.5 0 0 1 0,7a3.5,3.5 0 0 1 0,-7"/>
+ </g>
+</svg>

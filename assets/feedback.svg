@@ -1,0 +1,11 @@
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+ <title>feedback</title>
+
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1" fill="#36c">
+   <path fill="#e5e5e5" id="svg_2" d="m19,16l-17,-4a3.83,3.83 0 0 1 -1,-2.5a3.83,3.83 0 0 1 1,-2.5l17,-4l0,13z"/>
+   <rect fill="#e5e5e5" id="svg_3" rx="2" y="9" x="4" height="8" width="4"/>
+  </g>
+ </g>
+</svg>

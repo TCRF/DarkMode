@@ -1,0 +1,8 @@
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+ <title>numbered list</title>
+
+ <g>
+  <title>Layer 1</title>
+  <path fill="#e5e5e5" id="svg_1" d="m7,15l12,0l0,2l-12,0l0,-2zm0,-6l12,0l0,2l-12,0l0,-2zm0,-6l12,0l0,2l-12,0l0,-2zm-5,3l1,0l0,-5l-2,0l0,1l1,0l0,4zm1,9l0,1l-1,0l0,1l1,0l0,1l-2,0l0,1l3,0l0,-5l-3,0l0,1l2,0zm-2,-7l0,1l2,0l0,1l-1.5,0a0.5,0.5 0 0 0 -0.5,0.5l0,2.5l3,0l0,-1l-2,0l0,-1l1.5,0a0.5,0.5 0 0 0 0.5,-0.5l0,-2a0.5,0.5 0 0 0 -0.5,-0.5l-2.5,0z"/>
+ </g>
+</svg>

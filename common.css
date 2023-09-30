@@ -1,0 +1,2097 @@
+/* TCRF.net - Dark Common CSS */
+/* Version: Gamma 1.0.3 */
+
+:root {
+ --bg-dark: hsl(120, 2%, 19%);
+ 
+ --dark-5: hsl(0, 0%, 5%);
+ --dark-10: hsl(0, 0%, 10%);
+ --dark-15: hsl(0, 0%, 15%);
+ --dark-20: hsl(0, 0%, 20%);
+ --dark-25: hsl(0, 0%, 25%);
+ --dark-30: hsl(0, 0%, 30%);
+ --dark-35: hsl(0, 0%, 35%);
+ --dark-40: hsl(0, 0%, 40%);
+ --dark-45: hsl(0, 0%, 45%);
+ --dark-50: hsl(0, 0%, 50%);
+ --dark-55: hsl(0, 0%, 55%);
+
+ --blue: hsl(220, 100%, 66%);
+ --lightblue: hsl(220, 100%, 80%);
+
+ --red: hsl(1, 100%, 66%);
+ --lightred: hsl(0, 70%, 70%);
+
+ --diff-red: hsl(1, 100%, 66%);
+ --diff-green: hsl(120, 100%, 66%);
+ 
+ --darkgreen: hsl(120, 50%, 40%);
+ --green: hsl(120, 100%, 66%);
+ --lightgreen: hsl(120, 100%, 87%);
+
+ --orange: hsl(30, 100%, 55%);
+ 
+ --lightyellow: hsl(45, 100%, 50%);
+ --yellow: hsl(45, 50%, 20%);
+
+ --white-90: hsl(0, 0%, 90%);
+
+ --border-radius-2: 2px;
+ --border-dark-45: 1px solid var(--dark-45);
+}
+
+/* RC Language Dropdown */
+#sp-rc-language {
+  background-color: var(--dark-20);
+  color: var(--white-90);
+  border: var(--border-dark-45);
+}
+
+/* Summary box styling */
+.oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input:focus {
+  border-color: var(--green);
+  box-shadow: inset 0 0 6px 0px var(--green);
+}
+.oo-ui-textInputWidget.oo-ui-widget-enabled:hover .oo-ui-inputWidget-input:focus {
+  border-color: var(--green);
+}
+
+/* Blue checkbox input styling */
+/* Checked, Indeterminate */
+.oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:checked + span, .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:indeterminate + span {
+  background-color: var(--darkgreen);
+  border-color: var(--green);
+}
+/* Checked Active, Indeterminate Active */
+.oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:checked:active + span, .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:indeterminate:active + span {
+  background-color: var(--darkgreen);
+  border-color: var(--green);
+  box-shadow: inset 0 0 0 1px var(--lightgreen);
+}
+/* Active */
+.oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:active + span, .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:active {
+  background-color: var(--darkgreen);
+  border-color: var(--darkgreen);
+  box-shadow: inset 0 0 0 1px var(--darkgreen);
+}
+/* Checked Hover, Indeterminate Hover */
+.oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:checked:hover + span, .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:indeterminate:hover + span {
+  background-color: var(--darkgreen);
+  border-color: var(--green);
+}
+/* Hover */
+.oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:hover + span, .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:hover {
+  border-color: var(--green);
+}
+/* Checked Focus, Indeterminate Focus */
+.oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:checked:focus + span, .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type="checkbox"]:indeterminate:focus + span {
+  background-color: var(--darkgreen);
+}
+
+/* Remove button inner blue glow */
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:focus {
+  box-shadow: none;
+}
+
+/* Recent Changes "Filter changes (use menu or search for filter name)" placeholder text color */
+/* Until I figure out a shorter way of doing this, I'm using this big clusterfuck selector */
+/* And go figure this doesn't even fucking work. Or it works a time or two, then goes back to either grey text or dark grey text. Fuck me. */
+html.client-js body.mw-rcfilters-enabled.mediawiki.ltr.sitedir-ltr.mw-hide-empty-elt.ns--1.ns-special.mw-special-Recentchanges.page-Special_RecentChanges.rootpage-Special_RecentChanges.skin-vector.action-view.mw-rcfilters-ui-initialized.webfonts-changed div#content.mw-body div#bodyContent.mw-body-content div#mw-content-text div.rcfilters-head.mw-rcfilters-head div.rcfilters-container.mw-rcfilters-container div.oo-ui-widget.oo-ui-widget-enabled.mw-rcfilters-ui-filterWrapperWidget div.oo-ui-widget.oo-ui-widget-enabled.oo-ui-draggableGroupElement.oo-ui-tagMultiselectWidget.oo-ui-tagMultiselectWidget-outlined.oo-ui-menuTagMultiselectWidget.mw-rcfilters-ui-filterTagMultiselectWidget div.mw-rcfilters-ui-table div.mw-rcfilters-ui-row.mw-rcfilters-ui-filterTagMultiselectWidget-views div.mw-rcfilters-ui-cell.mw-rcfilters-ui-filterTagMultiselectWidget-views-input div.oo-ui-tagMultiselectWidget-input.oo-ui-widget.oo-ui-widget-enabled.oo-ui-inputWidget.oo-ui-iconElement.oo-ui-textInputWidget.oo-ui-textInputWidget-type-text input.oo-ui-inputWidget-input.webfonts-changed::placeholder {
+  color: var(--white-90) !important;
+}
+
+/* Top-right "Search The Cutting Room Floor" placeholder text color */
+#searchInput::placeholder {
+  color: var(--white-90) !important;
+}
+
+/* Editor: Save Changes button styling */
+#wpSave {
+  border: 2px solid var(--green) !important;
+  background-color: var(--dark-15) !important;
+  border-radius: var(--border-radius-2) !important;
+  text-transform: capitalize;
+}
+#wpSave:focus {
+  box-shadow: inset 0 0 7px 0px var(--green) !important;
+}
+
+/* Editor: Show Preview button styling */
+#wpPreview {
+  border: 2px solid var(--orange) !important;
+  background-color: var(--dark-15) !important;
+  border-radius: var(--border-radius-2) !important;
+  text-transform: capitalize;
+}
+#wpPreview:focus {
+  box-shadow: inset 0 0 7px 0px var(--orange) !important;
+}
+
+/* Editor: Show Changes button styling */
+#wpDiff {
+  border: 2px solid var(--blue) !important;
+  background-color: var(--dark-15) !important;
+  border-radius: var(--border-radius-2) !important;
+  text-transform: capitalize;
+}
+#wpDiff:focus {
+  box-shadow: inset 0 0 7px 0px var(--blue) !important;
+}
+
+/* Editor: Cancel button styling */
+.cancelLink #mw-editform-cancel a.oo-ui-buttonElement-button {
+  border: 2px solid var(--red) !important;
+  background-color: var(--dark-15) !important;
+  border-radius: var(--border-radius-2) !important;
+}
+.cancelLink #mw-editform-cancel a.oo-ui-buttonElement-button:focus {
+  box-shadow: inset 0 0 7px 0px var(--red) !important;
+}
+
+
+/* "Updated since last visit" marker */
+.updatedmarker {
+  background-color: var(--dark-10);
+  color: var(--white-90);
+  border: 2px solid var(--green);
+  padding: 0.1rem;
+  border-radius: var(--border-radius-2);
+}
+
+/* Template:PSIIBox, Template:PSIVBox, Template:PSIVBoxItem */
+.psiibox {
+  color: var(--white-90) !important;
+}
+
+/* Template:SF2Box */
+.sf2box {
+  color: var(--white-90) !important;
+}
+
+/* Template:Collapse */
+.collapsetemplate th {
+  background-color: var(--dark-20) !important;
+}
+.collapsetemplate td {
+  background-color: var(--dark-15) !important;
+  border: 1px solid var(--dark-45) !important;
+}
+.collapsetemplate table {
+  border: 1px solid var(--dark-45) !important;
+}
+/* Stupid hacky crap I have to do to get the border color to change when the template is "collapsed" */
+.mw-collapsible.collapsetemplate.mw-collapsed.mw-made-collapsible {
+  border: 1px solid var(--dark-45) !important;
+}
+.mw-collapsible.collapsetemplate.mw-made-collapsible {
+  border: 1px solid var(--dark-45) !important;
+}
+
+/* Template:Symphomap, Template:Symphocomp */
+.bubblesymphony caption {
+  color: var(--white-90) !important;
+}
+.bubblesymphony th {
+  color: var(--white-90) !important;
+}
+
+/* New Pages - Unpatrolled Edits BG */
+.not-patrolled {
+    background-color: var(--yellow) !important;
+}
+
+/* <gallery mode=slideshow showthumbnails> style fix */
+.slideshow-current {
+  background-color: var(--dark-20) !important;
+}
+
+.gallerytextwrapper {
+  background: hsla(0,0%,15%,0.8) !important;
+}
+
+/* CodeMirror Syntax Highlighting */
+.CodeMirror {
+  background: var(--dark-10) !important;
+}
+
+.CodeMirror-line {
+  background-color: var(--dark-10) !important;
+}
+
+.cm-mw-doubleUnderscore, .cm-mw-signature, .cm-mw-hr {
+  background-color: var(--dark-25);
+}
+
+.CodeMirror-line span {
+  color: var(--white-90);
+}
+
+.cm-mw-section-header {
+  color: #08f !important;
+}
+
+/* This is for when you insert a space before a line */
+/* for turning a line into a pre element, without using <pre> */
+.cm-mw-skipformatting {
+  background-color: hsl(0, 0%, 35%) !important;
+  padding-right: 10px;
+}
+
+.cm-mw-link {
+  color: var(--blue) !important;
+}
+.cm-mw-link-tosection {
+  color: var(--blue) !important;
+}
+.cm-mw-extlink, .cm-mw-free-extlink {
+  color: var(--blue) !important;
+}
+.cm-mw-extlink-protocol, .cm-mw-free-extlink-protocol {
+  color: var(--blue) !important;
+}
+
+.cm-mw-exttag-name {
+  color: #290 !important;
+}
+.cm-mw-exttag-bracket {
+  color: #290 !important;
+}
+
+.cm-mw-template {
+  color: hsl(265, 30%, 50%) !important;
+}
+.cm-mw-template-name {
+  color: hsl(265, 30%, 50%) !important;
+}
+.cm-mw-template-bracket {
+  color: hsl(265, 30%, 50%) !important;
+}
+.cm-mw-template-argument-name {
+  color: hsl(265, 30%, 50%) !important;
+}
+.cm-mw-template-delimiter {
+  color: hsl(265, 30%, 50%) !important;
+}
+
+.cm-mw-list {
+  color: #08f !important;
+}
+
+.cm-mw-link-bracket {
+  color: var(--blue) !important;
+}
+
+.cm-mw-htmltag-name {
+  color: #290 !important;
+}
+.cm-mw-htmltag-bracket {
+  color: #290 !important;
+}
+
+.cm-mw-parserfunction-name {
+  color: hsl(0, 50%, 50%) !important;
+}
+.cm-mw-parserfunction-bracket {
+  color: hsl(0, 50%, 50%) !important;
+}
+
+.cm-mw-link-pagename {
+  color: var(--blue) !important;
+}
+
+.cm-mw-extlink-bracket {
+  color: var(--blue) !important;
+}
+
+.cm-mw-doubleUnderscore, .cm-mw-signature, .cm-mw-hr {
+  color: #08f !important;
+}
+
+.cm-mw-exttag-attribute {
+  color: #290 !important;
+}
+
+.cm-mw-exttag-attribute {
+  color: #290 !important;
+}
+
+.cm-mw-comment {
+  color: #84a0a0; !important
+}
+
+.cm-mw-apostrophes-bold, .cm-mw-apostrophes-italic {
+  color: #08f !important;
+}
+
+.cm-mw-link-delimiter {
+  color: var(--blue) !important;
+}
+/* END Code Mirror Syntax Highlighting */
+
+/* Revamped Translation Progress Icons */
+/* To do: Remake these in SVG */
+.mw-pt-progress--stub { background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/prog1.svg"); }
+.mw-pt-progress--low { background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/prog2.svg"); }
+.mw-pt-progress--med { background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/prog3.svg"); }
+.mw-pt-progress--high { background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/prog4.svg"); }
+.mw-pt-progress--complete { background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/prog5.svg"); }
+
+/* SVG Icons */
+#searchButton {
+  background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/search.svg");
+}
+#pt-uls .uls-trigger::before { 
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/language.svg");
+    opacity: 1.0;
+}
+#mw-indicator-mw-helplink a {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/help.svg");
+}
+.oo-ui-icon-signature, .mw-ui-icon-signature::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/signature.svg");
+}
+.oo-ui-icon-help, .mw-ui-icon-help::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/help2.svg");
+}
+.oo-ui-icon-helpNotice, .mw-ui-icon-helpNotice::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/help.svg");
+}
+.oo-ui-indicator-down {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/down.svg");
+}
+.oo-ui-icon-checkAll, .mw-ui-icon-checkAll::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/check-all.svg");
+}
+.oo-ui-icon-menu, .mw-ui-icon-menu::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/menu.svg");
+}
+.oo-ui-icon-play, .mw-ui-icon-play::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/play.svg");
+}
+.oo-ui-icon-close, .mw-ui-icon-close::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/close.svg");
+}
+.oo-ui-icon-edit, .mw-ui-icon-edit::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/edit.svg");
+}
+.oo-ui-icon-bookmark, .mw-ui-icon-bookmark::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/bookmark.svg");
+}
+.oo-ui-icon-trash, .mw-ui-icon-trash::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/trash.svg");
+}
+.oo-ui-icon-settings, .mw-ui-icon-settings::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/settings.svg");
+}
+.oo-ui-icon-article, .mw-ui-icon-article::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/article.svg");
+}
+.oo-ui-icon-tag, .mw-ui-icon-tag::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/tag.svg");
+}
+.oo-ui-icon-search, .mw-ui-icon-search::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/search.svg");
+}
+.oo-ui-icon-feedback, .mw-ui-icon-feedback::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/feedback.svg") !important;
+}
+.oo-ui-image-progressive.oo-ui-icon-feedback, .mw-ui-icon-feedback-progressive::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/feedback.svg") !important;
+}
+.oo-ui-icon-highlight, .mw-ui-icon-highlight::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/highlight.svg");
+}
+.oo-ui-icon-next, .mw-ui-icon-next::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/next.svg");
+}
+.oo-ui-icon-previous, .mw-ui-icon-previous::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/previous.svg");
+}
+.oo-ui-icon-check, .mw-ui-icon-check::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/check.svg");
+}
+.oo-ui-image-invert.oo-ui-icon-stop, .mw-ui-icon-stop-invert::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/invert.svg") !important;
+}
+.oo-ui-icon-stop, .mw-ui-icon-stop::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/invert.svg") !important;
+}
+.oo-ui-icon-reload, .mw-ui-icon-reload::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/reload.svg") !important;
+}
+.oo-ui-icon-code, .mw-ui-icon-code::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/code.svg");
+}
+.oo-ui-icon-expand, .mw-ui-icon-expand::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/expand.svg");
+}
+.oo-ui-icon-collapse, .mw-ui-icon-collapse::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/collapse.svg");
+}
+#pt-anonuserpage, #pt-userpage a {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/avatar.svg");
+    margin-top: 3px;
+    padding-top: 0.3em !important;
+}
+.imeselector {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/imeselector.svg");
+    background-color: var(--dark-15);
+    box-shadow: 0 0 0 0 transparent !important;
+}
+.uls-ime-disable-link {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/imeselector-disabled.svg");
+}
+.imeselector-menu .ime-checked {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/ime-check.svg");
+}
+.uls-ime-more-settings-link {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/ime-settings.svg");
+    border-left: var(--border-dark-45);
+}
+.languagesettings-menu .menu-section.display-settings-block {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/ime-display.svg");
+}
+#uls-settings-block > button.display-settings-block {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/ime-display.svg");
+}
+#uls-settings-block > button.input-settings-block {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/imeselector.svg");
+}
+.languagesettings-menu .menu-section.input-settings-block {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/imeselector.svg");
+}
+.uls-search-label {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/search.svg");
+}
+/* Tux Translation System - SVG Icons */
+.tux-action-bar .translate-mode-button::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/tux-translate.svg");
+}
+.tux-action-bar .page-mode-button::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/tux-page.svg");
+}
+.tux-action-bar .proofread-mode-button::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/tux-proofread.svg");
+}
+.tux-message-filter-wrapper {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/tux-search.svg");
+}
+.grid .tux-message-editor .close {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/tux-close.svg");
+}
+.tux-message-editor .editor-expand {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/tux-expand.svg");
+}
+.message-desc-edit {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/tux-edit.svg");
+}
+.tux-list-edit a {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/tux-edit.svg");
+}
+.tux-status-translated, .tux-status-proofread {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/tux-translated.svg");
+}
+.tux-pagemode-status.untranslated {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/tux-untranslated.svg");
+}
+.tux-notice-message.diff {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/tux-clock.svg");
+}
+.uls-icon-close {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/tux-close.svg");
+}
+.uls-icon-back {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/lang-back.svg");
+    border-right: var(--border-dark-45);
+}
+.client-js .sortable:not(.jquery-tablesorter) > * > tr:first-child > th:not(.unsortable), .jquery-tablesorter th.headerSort {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/table-sorter.svg");
+}
+/* Editor SVGs */
+.oo-ui-icon-bold, .mw-ui-icon-bold::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-bold.svg");
+}
+.oo-ui-icon-italic, .mw-ui-icon-italic::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-italic.svg");
+}
+.oo-ui-icon-link, .mw-ui-icon-link::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-link.svg");
+}
+.oo-ui-icon-image, .mw-ui-icon-image::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-image.svg");
+}
+.oo-ui-icon-reference, .mw-ui-icon-reference::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-reference.svg");
+}
+.oo-ui-icon-listBullet, .mw-ui-icon-listBullet::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-listbullet.svg");
+}
+.oo-ui-icon-listNumbered, .mw-ui-icon-listNumbered::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-listnumbered.svg");
+}
+.oo-ui-icon-noWikiText, .mw-ui-icon-noWikiText::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-nowikitext.svg");
+}
+.oo-ui-icon-newline, .mw-ui-icon-newline::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-newline.svg");
+}
+.oo-ui-icon-bigger, .mw-ui-icon-bigger::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-bigger.svg");
+}
+.oo-ui-icon-smaller, .mw-ui-icon-smaller::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-smaller.svg");
+}
+.oo-ui-icon-superscript, .mw-ui-icon-superscript::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-superscript.svg");
+}
+.oo-ui-icon-subscript, .mw-ui-icon-subscript::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-subscript.svg");
+}
+.oo-ui-icon-imageGallery, .mw-ui-icon-imageGallery::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-imagegallery.svg");
+}
+.oo-ui-icon-articleRedirect, .mw-ui-icon-articleRedirect::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-articleredirect.svg");
+}
+.oo-ui-icon-table, .mw-ui-icon-table::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-table.svg");
+}
+.oo-ui-icon-articleSearch, .mw-ui-icon-articleSearch::before {
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/editor-articlesearch.svg");
+}
+/* Main body */
+body {
+    background-color: var(--bg-dark);
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/tcrf-dark.png");
+}
+
+/* Top of page gradient */
+#mw-page-base {
+    background-image: linear-gradient(to top, var(--bg-dark) 30%, var(--dark-5));
+    background-color: transparent;
+}
+/* Top of page links */
+#p-personal a {
+    color: var(--lightblue);
+}
+#p-personal a:visited {
+    color: var(--blue);
+}
+
+/* Document body */
+.mw-body {
+    background-color: var(--dark-25);
+    color: var(--white-90);
+    border: 1px solid var(--dark-45);
+}
+
+/**
+ * Main page boxes
+ * Thank you CounterDiving for adding IDs to those boxes!
+ */
+/* "# articles and counting" box */
+#statistics-bar {
+    border: 1px solid var(--dark-45) !important;
+    background-color: var(--dark-20) !important;
+    color: var(--white-90) !important;
+}
+/* Featured Article box */
+#featured-area {
+    border: 1px solid var(--dark-45) !important;
+    background-color: var(--dark-20) !important;
+}
+/* Did You Know box */
+#dyk-area {
+    border: 1px solid var(--dark-45) !important;
+    background-color: var(--dark-20) !important;
+}
+/* "Contributing" box */
+#contrib-area {
+    border: 1px solid var(--dark-45) !important;
+    background-color: var(--dark-20) !important;
+}
+
+/* That thing from when you get a message on your talk page */
+.usermessage {
+    background-color: var(--yellow);
+    border: 1px solid var(--lightyellow);
+    color: var(--white-90);
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--white-90);
+}
+h1, h2 {
+    border-bottom: var(--border-dark-45);
+}
+
+/* Linkage - General */
+a.new, #p-personal a.new {
+    color: var(--lightred);
+}
+a {
+    color: var(--lightblue);
+}
+a:visited {
+    color: var(--blue);
+}
+a:active {
+    color: var(--lightblue);
+}
+
+/**
+ * Article History comparison diff styling
+ */
+/* General styling for all diff boxes */
+.diffchange {
+    border-radius: 0.3em !important;
+    margin: 0em 0.15em !important;
+    padding: 0.15em 0.3em !important;
+    font-weight: normal !important;
+}
+/* Unchanged items */
+.diff-context {
+    background-color: var(--dark-20);
+    border-color: var(--dark-40);
+    color: var(--white-90);
+}
+/* Lines added */
+.diff-addedline {
+    background-color: var(--dark-20);
+    border-color: var(--diff-green);
+}
+.diff-addedline .diffchange {
+    background-color: var(--dark-30);
+    color: var(--lightgreen);
+    text-shadow: 0px 0.6px 2px var(--dark-5);
+}
+/* Lines removed */
+.diff-deletedline {
+    background-color: var(--dark-20);
+    border-color: var(--diff-red);
+}
+.diff-deletedline .diffchange {
+    background-color: var(--dark-30);
+    color: var(--lightred);
+    text-shadow: 0px 0.6px 2px var(--dark-5);
+}
+
+/* Text area stuff */
+textarea {
+    background-color: var(--dark-5);
+    color: var(--white-90);
+    border-color: var(--dark-45);
+}
+
+/* RC Filters - Highlight color fix */
+div.mw-rcfilters-ui-highlightColorPickerWidget-buttonSelect-color.mw-rcfilters-ui-highlightColorPickerWidget-buttonSelect-color-none.oo-ui-widget.oo-ui-widget-enabled.oo-ui-optionWidget.oo-ui-buttonElement.oo-ui-buttonElement-frameless.oo-ui-iconElement.oo-ui-buttonOptionWidget a.oo-ui-buttonElement-button {
+    background-color: transparent !important;
+    border: 0px none;
+}
+div.mw-rcfilters-ui-highlightColorPickerWidget-buttonSelect-color.mw-rcfilters-ui-highlightColorPickerWidget-buttonSelect-color-none.oo-ui-widget.oo-ui-widget-enabled.oo-ui-optionWidget.oo-ui-buttonElement.oo-ui-buttonElement-frameless.oo-ui-iconElement.oo-ui-buttonOptionWidget a.oo-ui-buttonElement-button:hover {
+    background-color: transparent !important;
+    border: 0px none;
+}
+.mw-rcfilters-ui-highlightColorPickerWidget-buttonSelect-color.oo-ui-buttonElement-frameless > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon.oo-ui-icon-check {
+    background-image: linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E %3Ctitle%3E check %3C/title%3E %3Cpath d=%22M7 14.17L2.83 10l-1.41 1.41L7 17 19 5l-1.41-1.42z%22/%3E %3C/svg%3E") !important;
+}
+.mw-rcfilters-ui-highlightColorPickerWidget-buttonSelect-color.mw-rcfilters-ui-highlightColorPickerWidget-buttonSelect-color.oo-ui-widget.oo-ui-widget-enabled.oo-ui-optionWidget.oo-ui-buttonElement.oo-ui-buttonElement-frameless.oo-ui-buttonOptionWidget.oo-ui-optionWidget-selected.oo-ui-buttonElement-active.oo-ui-iconElement a.oo-ui-buttonElement-button {
+    background-color: transparent !important;
+    border: 0px none !important;
+}
+.mw-rcfilters-ui-highlightColorPickerWidget-buttonSelect-color.mw-rcfilters-ui-highlightColorPickerWidget-buttonSelect-color.oo-ui-widget.oo-ui-widget-enabled.oo-ui-optionWidget.oo-ui-buttonElement.oo-ui-buttonElement-frameless.oo-ui-buttonOptionWidget.oo-ui-optionWidget-selected.oo-ui-buttonElement-active.oo-ui-iconElement a.oo-ui-buttonElement-button:hover {
+    background-color: transparent !important;
+    border: 0px none !important;
+}
+
+/* API Sandbox */
+.mw-apisandbox-toolbar {
+    background: var(--dark-15);
+    border-bottom: var(--border-dark-45);
+}
+.oo-ui-outlineOptionWidget.oo-ui-optionWidget-highlighted {
+    background-color: var(--dark-45) !important;
+}
+
+
+/**
+ * Wiki Editor UI
+ * This one's gonna be brutal, but I'm in it to win it.
+ */
+
+.editOptions {
+    background-color: var(--dark-20);
+    color: var(--white-90);
+    border: var(--border-dark-45);
+}
+
+.mw-editform #wpTextbox1 {
+    background-color: var(--dark-15);
+    color: var(--white-90);
+}
+.wikiEditor-ui .wikiEditor-ui-top {
+    border-bottom: var(--border-dark-45);
+}
+.wikiEditor-ui-toolbar {
+    background-color: var(--dark-15);
+    background-image: none;
+}
+.wikiEditor-ui-toolbar .sections .section {
+    border-top: var(--border-dark-45);
+    background-color: var(--dark-15);
+}
+.wikiEditor-ui-toolbar .group {
+    border-right: var(--border-dark-45);
+}
+.wikiEditor-ui-toolbar .group .tool-select {
+    border: var(--border-dark-45);
+    background-color: var(--dark-35);
+}
+.wikiEditor-ui-toolbar .group .tool-select .label {
+    color: var(--white-90);
+}
+.wikiEditor-ui-toolbar .group .tool-select .options {
+    border: var(--border-dark-45);
+    background-color: var(--dark-35);
+}
+.wikiEditor-ui-toolbar .group .tool-select .options .option {
+    color: var(--white-90);
+}
+.wikiEditor-ui-toolbar .group .tool-select .options .option:hover {
+    background-color: var(--dark-25);
+}
+.wikiEditor-ui-toolbar .group-search {
+    border-left: var(--border-dark-45);
+}
+.wikiEditor-ui-toolbar .tabs span.tab a.current, .wikiEditor-ui-toolbar .tabs span.tab a.current:visited {
+    color: var(--white-90);
+}
+.wikiEditor-ui-toolbar .tabs span.tab a, .wikiEditor-ui-toolbar .tabs span.tab a:visited {
+    color: var(--blue);
+}
+.tool.oo-ui-buttonElement-frameless.oo-ui-iconElement {
+    margin: 0.1em;
+}
+.tool.oo-ui-buttonElement-frameless.oo-ui-iconElement:hover {
+    background-color: transparent;
+    outline: 0 none;
+}
+.wikiEditor-ui-toolbar .group .label {
+    color: var(--white-90);
+}
+.wikiEditor-ui .wikiEditor-ui-view {
+    border: var(--border-dark-45);
+}
+.wikiEditor-ui-toolbar .page-characters div span:hover {
+    background-color: var(--dark-45);
+    color: var(--dark-15);
+}
+.wikiEditor-ui-toolbar .page-characters div span {
+    border: var(--border-dark-45);
+    color: var(--white-90);
+}
+.wikiEditor-ui-toolbar .booklet .index .current {
+    background-color: var(--lightblue);
+}
+.wikiEditor-ui-toolbar .booklet .index div {
+    color: var(--white-90);
+}
+.wikiEditor-ui-toolbar .page-table th, .wikiEditor-ui-toolbar .page-table td {
+    color: var(--white-90);
+}
+
+.mw-widget-calendarWidget-prevButton.oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement.oo-ui-buttonElement-frameless.oo-ui-iconElement.oo-ui-buttonWidget {
+    border: 1px solid var(--dark-25);
+}
+.mw-widget-calendarWidget-nextButton.oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement.oo-ui-buttonElement-frameless.oo-ui-iconElement.oo-ui-buttonWidget {
+    border: 1px solid var(--dark-25);
+}
+.mw-widget-calendarWidget-labelButton.oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement.oo-ui-buttonElement-frameless.oo-ui-buttonWidget.oo-ui-labelElement {
+    border: 1px solid var(--dark-25);
+}
+.mw-widget-calendarWidget-upButton.oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement.oo-ui-buttonElement-frameless.oo-ui-iconElement.oo-ui-buttonWidget a.oo-ui-buttonElement-button {
+    background-color: transparent !important;
+}
+
+/* Translation */
+.ext-translate-language-selector .uls {
+    color: var(--blue);
+}
+.mw-parser-output {
+    color: var(--white-90);
+}
+.uls-search {
+    background-color: var(--dark-35);
+    border-bottom: var(--border-dark-45);
+}
+.uls-languagefilter {
+    background-color: var(--dark-35);
+    color: var(--white-90);
+}
+.uls-lcd {
+    background-color: var(--dark-25);
+}
+.ext-translate-container .tux-messagelist .tux-message-pagemode {
+    background-color: var(--dark-25);
+}
+.ext-translate-container .tux-messagelist .tux-message-pagemode .tux-message-item-compact {
+    border-bottom: var(--border-dark-45);
+    border-left: var(--border-dark-45);
+    border-right: var(--border-dark-45);
+    background-color: var(--dark-20);
+}
+.ext-translate-container .tux-messagelist .tux-message-pagemode:first-child .tux-message-item-compact {
+    border-top: var(--border-dark-45);
+}
+.ext-translate-container .tux-messagelist .tux-message-pagemode .tux-message-item-compact:hover {
+    background-color: var(--dark-30);
+}
+.tux-messagelist .tux-message-pagemode .tux-pagemode-source {
+    color: var(--white-90);
+}
+.tux-action-bar {
+    background-color: var(--dark-15);
+}
+.tux-message-editor .editcolumn {
+    border-right: 1px solid var(--dark-25);
+    background-color: var(--dark-20);
+    color: var(--white-90);
+}
+.grid .tux-message-editor .messagekey {
+    color: var(--white-90);
+    background-color: var(--dark-35);
+}
+.grid .tux-message-editor .tux-editor-titletools {
+    background-color: var(--dark-35);
+}
+.tux-breadcrumb {
+    color: var(--lightblue);
+}
+.tux-message-selector li a {
+    color: var(--lightblue);
+}
+.tux-action-bar.floating {
+    border-top: var(--border-dark-45);
+}
+.tux-breadcrumb__item--aggregate {
+    cursor: pointer;
+    color: var(--blue);
+}
+.tux-message-selector li.selected a {
+    color: var(--blue);
+}
+.tux-message-editor textarea {
+    border: var(--border-dark-45);
+    background-color: var(--dark-25);
+    color: var(--white-90);
+}
+.tux-editor-editsummary-block input:disabled {
+    background-color: var(--dark-55);
+}
+.tux-editor-editsummary-block input {
+    background-color: var(--dark-25);
+    border: var(--border-dark-45);
+}
+.grid .tux-message-editor .infocolumn-block {
+    background-color: var(--dark-25);
+    color: var(--white-90);
+}
+.tux-editor-skip-button.mw-ui-button.mw-ui-quiet {
+    background-color: var(--dark-30);
+    color: var(--white-90);
+}
+.tux-editor-skip-button.mw-ui-button.mw-ui-quiet:hover {
+    background-color: var(--dark-35);
+    color: var(--white-90);
+}
+.tux-messagetable-header.floating {
+    background-color: var(--dark-15);
+}
+.mw-ui-button.mw-ui-progressive:disabled {
+    background-color: var(--dark-45);
+    color: var(--white-90);
+    border-color: var(--dark-55);
+}
+.mw-ui-button.mw-ui-progressive:disabled:hover, .mw-ui-button.mw-ui-progressive:disabled:active {
+    background-color: var(--dark-45);
+    color: var(--white-90);
+    border-color: var(--dark-55);
+}
+table.mw-interwikitable.body td.mw-interwikitable-local-yes {
+    color: var(--dark-5);
+}
+.tagcloud .tag {
+    color: var(--white-90);
+}
+#uls-settings-block > button:hover {
+    color: var(--white-90);
+}
+#uls-settings-block > button {
+    color: var(--white-90);
+}
+.uls-font-item:first-child {
+    border-top: var(--border-dark-45);
+}
+.uls-font-item {
+    border-bottom: var(--border-dark-45);
+    background: var(--dark-25);
+}
+.uls-font-label strong {
+    color: var(--white-90);
+}
+.uls-font-label {
+    color: var(--white-90);
+}
+.checkbox strong {
+    color: var(--white-90);
+}
+.uls-ui-languages p, .checkbox {
+    color: var(--white-90);
+}
+.mw-notification {
+    color: var(--white-90) !important;
+    border: var(--border-dark-45);
+    background-color: var(--dark-20);
+}
+
+/* Babel */
+.mw-babel-box {
+    color: var(--dark-5);
+}
+.mw-babel-box a {
+    color: var(--blue);
+}
+.mw-babel-header {
+    background-color: var(--dark-15);
+}
+.mw-babel-wrapper {
+    border: var(--border-dark-45);
+    background-color: var(--dark-25);
+}
+
+#mw-allmessagestable > tbody > tr > td {
+    background-color: var(--dark-15);
+}
+#mw-allmessagestable > tbody > tr > td:hover {
+    background-color: var(--dark-35);
+}
+#mw-allmessagestable tbody:hover td {
+    background-color: var(--dark-35);
+}
+#mw-allmessagestable > thead > tr > th {
+    background-color: var(--dark-5);
+}
+
+/* Page history - Selected revisions */
+#pagehistory li.selected {
+    background-color: var(--dark-20);
+    color: var(--white-90);
+    outline: 0 none;
+}
+
+/* Footer text */
+#footer li { color: var(--white-90); }
+#footer a { color: var(--lightblue); }
+
+/* Msgboxes */
+#localNotice .msgbox {
+    background: var(--dark-15) !important;
+    color: var(--white-90) !important;
+    border: 1px solid var(--green) !important;
+}
+.msgbox {
+    background-color: var(--dark-15) !important;
+    color: var(--white-90) !important;
+    border-color: var(--dark-45) !important;
+}
+table.msgbox {
+    background: var(--dark-30) !important;
+    color: var(--white-90) !important;
+    border: 1px solid var(--dark-45) !important;
+}
+.mw-revision.warningbox {
+    background-color: var(--dark-30) !important;
+    color: var(--white-90) !important;
+    border-color: var(--dark-45) !important;
+}
+
+li.gallerybox div.thumb {
+    border: var(--border-dark-45);
+}
+
+/* Stupid ID-less "Don't Know How To Edit?" boxes */
+.mw-editnotice.mw-editnotice-namespace.mw-editnotice-0 div {
+    background-color: var(--dark-20) !important;
+    border-color: var(--dark-45) !important;
+}
+.mw-editnotice.mw-editnotice-namespace.mw-editnotice-1 div {
+    background-color: var(--dark-20) !important;
+    border-color: var(--dark-45) !important;
+}
+/* Don't know if there's a 2, but gonna cover that base anyway */
+.mw-editnotice.mw-editnotice-namespace.mw-editnotice-2 div {
+    background-color: var(--dark-20) !important;
+    border-color: var(--dark-45) !important;
+}
+.mw-editnotice.mw-editnotice-namespace.mw-editnotice-3 div {
+    background-color: var(--dark-20) !important;
+    border-color: var(--dark-45) !important;
+}
+
+.mw_metadata td {
+    background-color: var(--dark-15);
+}
+.mw_metadata td, .mw_metadata th {
+    border: var(--border-dark-45);
+}
+.mw_metadata th {
+    background-color: var(--dark-15);
+}
+
+.mw-pt-languages-list {
+    background-color: var(--dark-15);
+}
+.mw-pt-languages-label {
+    background-color: var(--dark-10);
+}
+.mw-pt-languages {
+    border: var(--border-dark-45);
+}
+
+/* Table of Contents */
+.toc, .mw-warning, .toccolours {
+    border: var(--border-dark-45);
+    background-color: var(--dark-20);
+}
+.tocnumber {
+    color: var(--white-90);
+}
+.toctogglelabel {
+    color: var(--blue);
+}
+/* We add a bit of padding to the TOC title background for when it's hidden */
+.toc .toctitle {
+    background-color: var(--dark-25);
+    padding: 0px 4px;
+}
+
+#filetoc {
+    border: var(--border-dark-45);
+    background-color: var(--dark-20);
+}
+
+/* Code blocks */
+.mw-code {
+    color: var(--white-90);
+    background-color: var(--dark-20);
+    border: var(--border-dark-45);
+}
+
+#image-info-box {
+    background: var(--dark-15) !important;
+    color: var(--white-90) !important;
+    border: 1px solid var(--dark-45) !important;
+}
+
+/* Calendar Widget */
+.mw-widget-calendarWidget {
+    border: var(--border-dark-45);
+}
+.mw-widget-calendarWidget-body-wrapper {
+    background-color: var(--dark-25);
+}
+.mw-widget-calendarWidget-body-outer-wrapper {
+    width: 292px;
+}
+.mw-widget-calendarWidget-header {
+    background-color: var(--dark-25);
+}
+.mw-widget-dateInputWidget.oo-ui-widget-enabled .mw-widget-dateInputWidget-handle {
+    background-color: var(--dark-35);
+    color: var(--white-90);
+    border-color: var(--dark-45);
+}
+.mw-widget-dateInputWidget.oo-ui-widget-enabled .mw-widget-dateInputWidget-handle:hover {
+    border-color: var(--dark-45);
+}
+.mw-widget-calendarWidget-item {
+    color: var(--white-90);
+}
+.mw-widget-calendarWidget-day-additional {
+    color: var(--dark-55);
+}
+.mw-widget-calendarWidget-day-heading {
+    color: var(--white-90);
+}
+.mw-widget-dateInputWidget-calendar {
+    background-color: var(--dark-25);
+}
+
+
+#contentSub, #contentSub2 {
+    color: var(--white-90);
+}
+
+/* Recent changes - No page found */
+a.new, #p-personal a.new {
+    color: var(--lightred);
+}
+a.new:visited, #p-personal a.new:visited {
+    color: var(--red);
+}
+
+.mw-parser-output a.external {
+    color: var(--lightblue);
+}
+.mw-parser-output a.external:visited {
+    color: var(--blue);
+}
+
+#mw-panel .portal .body li a:visited {
+    color: var(--blue);
+}
+
+#mw-panel .portal .body li a {
+    color: var(--lightblue);
+}
+
+#mw-panel .portal h3 {
+    color: var(--white-90);
+}
+
+/**
+ * Recent Changes - Active Filter
+ */
+.oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagMultiselectWidget-handle {
+    background-color: var(--dark-20);
+}
+
+/* "Active Filters" text at the top */
+.mw-rcfilters-ui-filterTagMultiselectWidget-wrapper-content-title {
+    color: var(--white-90);
+}
+
+/* Active filter bubbles */
+.oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagItemWidget.oo-ui-widget-enabled {
+    background-color: var(--dark-15);
+    color: var(--white-90);
+}
+
+/* Active filter bubble text height adjustment */
+.oo-ui-tagItemWidget.oo-ui-labelElement .oo-ui-labelElement-label {
+    line-height: 1.4em;
+}
+
+/* Namespaces & Tags area of Active Filters */
+.mw-rcfilters-ui-cell.mw-rcfilters-ui-filterTagMultiselectWidget-views-select {
+    background-color: var(--dark-35);
+}
+.mw-rcfilters-ui-filterTagMultiselectWidget-views-select-widget.oo-ui-widget {
+    border-right: var(--border-dark-45);
+    border-top: var(--border-dark-45);
+    border-bottom: var(--border-dark-45);
+}
+.mw-rcfilters-ui-filterTagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle {
+    border: var(--border-dark-45);
+}
+
+/* Edit summaries */
+span.comment {
+    color: var(--dark-55);
+}
+
+/* List of abbreviations */
+.mw-rcfilters-ui-changesListWrapperWidget .mw-changeslist-legend {
+    background-color: var(--dark-20);
+}
+
+/* RC Filters - Namespaces button */
+#ooui-73 > a:nth-child(1) {
+    border: 0px none !important;
+}
+#ooui-72 > a:nth-child(1) {
+    border: 0px none !important;
+}
+
+
+/* "View new changes since..." */
+.oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button {
+    color: var(--blue);
+}
+
+.oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover {
+    background-color: var(--dark-30);
+}
+.oo-ui-labelElement-label:active:visited { color: var(--blue); }
+.oo-ui-labelElement-label:active { background-color: var(--dark-35); }
+.oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:active, .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:active:focus, .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button {
+    color: var(--lightblue);
+    background-color: var(--dark-35);
+}
+
+/* "Live updates" & "# changes, # days" buttons */
+.oo-ui-buttonElement-button {
+    background-color: var(--dark-35) !important;
+    color: var(--white-90) !important;
+    border-color: var(--dark-45) !important;
+}
+.oo-ui-buttonElement-button:hover {
+    background-color: var(--dark-45);
+    border-color: var(--dark-45);
+}
+.oo-ui-buttonElement-button:active {
+    background-color: var(--dark-35);
+}
+
+/* Recent Changes filters - Namespaces & Tags button-specific styling */
+.mw-rcfilters-ui-cell.mw-rcfilters-ui-filterTagMultiselectWidget-views-select .mw-rcfilters-ui-filterTagMultiselectWidget-views-select-widget.oo-ui-widget.oo-ui-widget-enabled.oo-ui-selectWidget.oo-ui-selectWidget-unpressed.oo-ui-buttonSelectWidget .oo-ui-widget.oo-ui-widget-enabled.oo-ui-labelElement.oo-ui-optionWidget.oo-ui-buttonElement.oo-ui-buttonElement-frameless.oo-ui-iconElement.oo-ui-buttonOptionWidget a.oo-ui-buttonElement-button {
+    margin-top: 1px;
+    border-width: 0px !important;
+    background-color: var(--dark-35) !important;
+}
+
+/* RC Filters Back Arrow push */
+.mw-rcfilters-ui-filterMenuHeaderWidget-header-back {
+  padding-left: 6px;
+}
+
+/* Recent Changes filters - General button padding, mainly to add padding to the Show/Hide button */
+.oo-ui-buttonElement.oo-ui-labelElement > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {
+    padding: 0em 0.4em;
+}
+
+/* Recent Changes filters - Search bar placeholder text color change */
+/* I know, the selector for this is a clusterfucker. This is the only way I could get the placeholder text color change to show */
+html.client-js body.mw-rcfilters-enabled.mediawiki.ltr.sitedir-ltr.mw-hide-empty-elt.ns--1.ns-special.mw-special-Recentchanges.page-Special_RecentChanges.rootpage-Special_RecentChanges.action-view.mw-rcfilters-ui-initialized.webfonts-changed div#content.mw-body div#bodyContent.mw-body-content div#mw-content-text div.rcfilters-head.mw-rcfilters-head div.rcfilters-container.mw-rcfilters-container div.oo-ui-widget.oo-ui-widget-enabled.mw-rcfilters-ui-filterWrapperWidget div.oo-ui-widget.oo-ui-widget-enabled.oo-ui-draggableGroupElement.oo-ui-tagMultiselectWidget.oo-ui-tagMultiselectWidget-outlined.oo-ui-menuTagMultiselectWidget.mw-rcfilters-ui-filterTagMultiselectWidget div.mw-rcfilters-ui-table div.mw-rcfilters-ui-row.mw-rcfilters-ui-filterTagMultiselectWidget-views div.mw-rcfilters-ui-cell.mw-rcfilters-ui-filterTagMultiselectWidget-views-input div.oo-ui-tagMultiselectWidget-input.oo-ui-widget.oo-ui-inputWidget.oo-ui-iconElement.oo-ui-textInputWidget.oo-ui-textInputWidget-type-text.oo-ui-widget-enabled input.oo-ui-inputWidget-input.webfonts-changed::placeholder {
+    color: var(--dark-10) !important;
+}
+
+/* "# changes, # days" dropdown panel */
+.oo-ui-popupWidget-popup {
+    background-color: var(--dark-20);
+    border: var(--border-dark-45);
+    color: var(--white-90);
+}
+
+
+/* "# changes, # days" dropdown panel, "Recent hours" & "Recent days" text */
+.mw-rcfilters-ui-datePopupWidget .mw-rcfilters-ui-valuePickerWidget-title {
+    color: var(--white-90);
+}
+
+/* Selected changes/days */
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-active > .oo-ui-buttonElement-button {
+    color: var(--dark-25);
+}
+
+.oo-ui-labelElement .oo-ui-labelElement-label, .oo-ui-labelElement.oo-ui-labelElement-label {
+    color: var(--white-90);
+}
+
+/* Bob template stuff */
+.breakout {
+    background: var(--dark-20);
+    border: 1px solid var(--dark-45);
+}
+.breakouttitle {
+    color: var(--white-90);
+    background-color: var(--dark-35);
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+}
+.oo-ui-menuOptionWidget.oo-ui-optionWidget-selected.oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted, .oo-ui-menuOptionWidget.oo-ui-optionWidget-pressed.oo-ui-menuOptionWidget.oo-ui-optionWidget.highlighted {
+    background-color: var(--dark-25);
+    color: var(--dark-45) !important;
+}
+/* RC Filters */
+.mw-rcfilters-ui-menuSelectWidget-footer {
+    background-color: var(--dark-15);
+    border-top: var(--border-dark-45);
+}
+.mw-rcfilters-ui-tagItemWidget.oo-ui-flaggedElement-muted.oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-labelElement-label {
+    color: var(--white-90);
+}
+.mw-rcfilters-ui-tagItemWidget.oo-ui-flaggedElement-muted.oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-buttonWidget {
+    opacity: 1.0;
+}
+.mw-rcfilters-ui-tagItemWidget.oo-ui-flaggedElement-muted.oo-ui-tagItemWidget.oo-ui-widget-enabled {
+    border-color: var(--dark-45);
+}
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-selectWidget.oo-ui-selectWidget-unpressed.oo-ui-floatableElement-floatable.oo-ui-menuSelectWidget.mw-rcfilters-ui-menuSelectWidget.mw-rcfilters-ui-menuSelectWidget-view-namespaces {
+    background-color: var(--dark-35);
+}
+.mw-rcfilters-ui-itemMenuOptionWidget:not(:last-child):not(.mw-rcfilters-ui-itemMenuOptionWidget-identifier-talk) {
+    border-bottom: var(--border-dark-45);
+}
+.oo-ui-menuSelectWidget {
+    background-color: var(--dark-25);
+    border: var(--border-dark-45);
+}
+.mw-rcfilters-ui-row {
+    background-color: var(--dark-25);
+}
+.mw-rcfilters-ui-rcTopSectionWidget-savedLinks {
+    background-color: var(--dark-25);
+}
+.mw-rcfilters-ui-rcTopSectionWidget-topLinks-table {
+    background-color: var(--dark-25);
+}
+.oo-ui-menuSectionOptionWidget.oo-ui-widget-enabled {
+    background-color: var(--dark-15);
+}
+.mw-rcfilters-ui-itemMenuOptionWidget.oo-ui-optionWidget-selected {
+    background-color: var(--dark-25);
+}
+.mw-rcfilters-ui-itemMenuOptionWidget:hover {
+    background-color: var(--dark-25);
+}
+.oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget {
+    background-color: var(--dark-25);
+}
+.oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget:hover {
+  background-color: var(--dark-20);
+}
+.mw-rcfilters-ui-itemMenuOptionWidget-label-desc {
+    color: var(--white-90);
+}
+.mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted:not(.oo-ui-optionWidget-selected) {
+    background-color: var(--dark-25);
+}
+.mw-rcfilters-ui-savedLinksListWidget-placeholder.oo-ui-optionWidget .oo-ui-labelElement-label {
+    color: var(--white-90);
+}
+.mw-rcfilters-ui-filterMenuHeaderWidget-header {
+    border-bottom: var(--border-dark-45);
+}
+.mw-rcfilters-ui-filterTagMultiselectWidget-cell-filters {
+    background-color: var(--dark-20);
+}
+.mw-rcfilters-ui-itemMenuOptionWidget-view-namespaces {
+    border-top: 4px solid var(--dark-45);
+}
+.oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined.oo-ui-flaggedElement-invalid .oo-ui-inputWidget-input {
+    border-color: var(--red);
+}
+.oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-flaggedElement-invalid .oo-ui-inputWidget-input {
+    color: var(--red);
+}
+.mw-rcfilters-ui-filterMenuHeaderWidget-helpIcon.oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement.oo-ui-buttonElement-frameless.oo-ui-iconElement.oo-ui-buttonWidget {
+    padding-left: 8px;
+}
+.mw-rcfilters-ui-viewSwitchWidget label.oo-ui-labelWidget {
+    color: var(--white-90);
+}
+.mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted .mw-rcfilters-ui-itemMenuOptionWidget-label-title, .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted .mw-rcfilters-ui-itemMenuOptionWidget-label-desc {
+    color: var(--white-90);
+}
+.mw-rcfilters-ui-changesListWrapperWidget:not(.mw-rcfilters-ui-changesListWrapperWidget-highlighted) .mw-changeslist-watchedseen div.mw-rcfilters-ui-highlights-color-none {
+    background-color: var(--white-90);
+    border: 1px solid var(--white-90);
+}
+.mw-rcfilters-ui-changesListWrapperWidget:not(.mw-rcfilters-ui-changesListWrapperWidget-highlighted) .mw-changeslist-watchedunseen div.mw-rcfilters-ui-highlights-color-none {
+    background-color: var(--white-90);
+    border: 1px solid var(--white-90);
+}
+
+div.thumbinner {
+    border: var(--border-dark-45);
+    background-color: var(--dark-15);
+}
+
+/* Game series navbox stuff */
+.navboxhead {
+    background: var(--dark-35) !important;
+}
+.navboxhead a {
+    color: var(--lightblue);
+}
+.navboxhead th a {
+    color: var(--lightblue);
+}
+.navbox th {
+    background: var(--dark-40) !important;
+}
+table.navbox {
+    border: var(--border-dark-45);
+    background-color: var(--dark-20);
+}
+table.navbox tbody {
+    background-color: var(--dark-20) !important;
+}
+
+/* Gallery thumbnails */
+#content .gallerybox div.thumb {
+    background-color: var(--dark-35);
+    border-color: var(--dark-45);
+}
+.gallerybox .thumb img {
+    background-color: var(--dark-35);
+}
+
+/* Tables */
+.wikitable {
+    color: var(--white-90);
+}
+table.wikitable, table.prettytable {
+  background: var(--dark-30);
+  border: var(--border-dark-45);
+}
+.wikitable th, .prettytable th {
+    background-color: var(--dark-15);
+}
+.wikitable td, .prettytable td {
+    border: var(--border-dark-45);
+    background-color: var(--dark-30);
+}
+
+/* Category section */
+#catlinks {
+    background-color: var(--dark-20);
+    border: var(--border-dark-45);
+}
+#catlinks a {
+    color: var(--lightblue);
+}
+#catlinks a.new {
+    color: var(--lightred);
+}
+#catlinks a:visited {
+  color: var(--blue);
+}
+
+/* Data Table */
+.mw-datatable th {
+    background-color: var(--dark-15);
+}
+.mw-datatable td, .mw-datatable th {
+    border: var(--border-dark-45);
+}
+.mw-datatable td {
+    background-color: var(--dark-35);
+}
+.mw-datatable tr:hover td {
+    background-color: var(--dark-30);
+}
+
+.oo-ui-panelLayout-framed {
+    border: var(--border-dark-45);
+    background-color: var(--dark-20);
+}
+
+
+/* History page, Compare button */
+.historysubmit {
+    border: var(--border-dark-45);
+    background-color: var(--dark-20);
+    color: var(--white-90);
+    padding: 0.4em;
+    border-radius: var(--border-radius-2);
+}
+
+/* No dark list bullets */
+ul {
+    list-style-image: none;
+}
+
+/* <pre>, <code> */
+pre {
+    background-color: var(--dark-20);
+    border-color: var(--dark-20);
+    border-radius: 8px;
+    color: var(--white-90);
+    -webkit-box-shadow: inset 0px 0px 4px 0px var(--dark-10); 
+    box-shadow: inset 0px 0px 4px 0px var(--dark-10);
+}
+
+code {
+    background-color: var(--dark-20);
+    border-color: var(--dark-20);
+    border-radius: 8px;
+    color: var(--white-90);
+}
+
+tt {
+    background-color: var(--dark-20);
+    border: 2px solid var(--dark-20);
+    border-radius: 8px;
+    color: var(--white-90);
+}
+
+fieldset {
+    border: var(--border-dark-45);
+}
+legend {
+    font-weight: bold;
+    color: var(--white-90);
+}
+
+
+/* Search Input */
+#searchInput {
+    border: var(--border-dark-45);
+}
+#simpleSearch input {
+    background-color: var(--dark-10);
+    color: var(--white-90);
+}
+#simpleSearch:hover #searchInput {
+    border-color: var(--dark-45);
+}
+#searchInput:focus, #simpleSearch:hover #searchInput:focus {
+    border: var(--border-dark-45);
+    outline: none;
+    -webkit-box-shadow: inset 0 0 0 0px transparent,inset 0 0 0 0px transparent;
+    box-shadow: inset 0 0 0 0px transparent,inset 0 0 0 0px transparent;
+}
+
+.oo-ui-textInputWidget .oo-ui-inputWidget-input {
+    background-color: var(--dark-35);
+    color: var(--white-90);
+    border: var(--border-dark-45);
+}
+
+.oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .mw-rcfilters-ui-tagItemWidget-selected.oo-ui-tagItemWidget.oo-ui-widget-enabled {
+    background-color: var(--dark-35);
+    border-color: var(--white-40);
+}
+.oo-ui-tagItemWidget {
+    border: var(--border-dark-45);
+}
+
+.oo-ui-tagItemWidget.oo-ui-widget-enabled:hover {
+    border-color: var(--dark-45);
+}
+
+/* Show/Hide button for Active Filters positioning fix */
+.mw-rcfilters-ui-filterTagMultiselectWidget-wrapper-top-hideshow {
+    margin-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+/* Save current filter settings button (below the Show/Hide button, on the left, the ribbon icon */
+.mw-rcfilters-ui-cell.mw-rcfilters-ui-filterTagMultiselectWidget-cell-save {
+    padding-right: 0.5em;
+    background-color: var(--dark-20);
+}
+.mw-rcfilters-ui-changesListWrapperWidget .mw-changeslist-legend {
+    border: var(--border-dark-45);
+}
+
+/* Parser profiling data */
+.wikitable > tr > th, .wikitable > * > tr > th {
+    background-color: var(--dark-20);
+    color: var(--white-90);
+}
+.wikitable.preview-limit-report > .wikitable > tr > th, .wikitable > tr > td, .wikitable > * > tr > th, .wikitable > * > tr > td {
+    border: var(--border-dark-45);
+}
+.wikitable.preview-limit-report {
+    background-color: var(--dark-35);
+    color: var(--white-90);
+}
+
+.suggestions-result {
+    color: var(--white-90);
+}
+.suggestions-results {
+    background-color: var(--dark-15);
+    border: var(--border-dark-45);
+    color: var(--white-90) !important;
+}
+.suggestions a.mw-searchSuggest-link, .suggestions a.mw-searchSuggest-link:hover, .suggestions a.mw-searchSuggest-link:active, .suggestions a.mw-searchSuggest-link:focus {
+    color: var(--white-90);
+}
+.suggestions-special {
+    background-color: var(--dark-5);
+    border: var(--border-dark-45);
+    color: var(--white-90);
+}
+.suggestions-special .special-query {
+    color: var(--white-90);
+}
+.highlight {
+    font-weight: bold;
+    color: var(--lightblue);
+}
+
+.mw-search-profile-tabs {
+    background-color: var(--dark-15);
+    border: var(--border-dark-45);
+}
+.search-types .current a {
+    color: var(--lightblue);
+}
+.results-info {
+    color: var(--white-90);
+}
+#mw-searchoptions {
+    background-color: var(--dark-35);
+    border: var(--border-dark-45);
+}
+
+
+.ext-cc-language-selector__trigger {
+    color: var(--lightblue);
+}
+.ext-cc-language-selector__trigger::after {
+    border-top: 4px solid var(--lightblue);
+}
+
+/**
+ * Change placeholder text color.
+ * This is supposed to work, but it doesn't seem to work for me.
+ */
+::placeholder {
+    color: var(--white-90);
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: var(--white-90);
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    color: var(--white-90);
+    opacity: 1;
+}
+
+/* Plus/Minus text colors */
+.mw-plusminus-pos {
+    color: hsl(140, 70%, 40%);
+}
+.mw-plusminus-neg {
+    color: var(--red);
+}
+.mw-plusminus-null {
+    color: #a2a9b1;
+}
+
+/* Warning boxes */
+.warningbox {
+    background-color: var(--yellow);
+    color: var(--white-90);
+    border: 1px solid var(--lightyellow);
+    border-radius: 0 8px 0 8px;
+}
+
+.wikiEditor-ui-toolbar .booklet .pages {
+    background-color: var(--dark-25);
+}
+.mw-pt-translate-header {
+    border-bottom: var(--border-dark-45);
+}
+/* Live Updates button */
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button {
+    border-color: var(--dark-45);
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover {
+    color: var(--dark-25);
+}
+.oo-ui-buttonElement.oo-ui-widget-disabled > .oo-ui-buttonElement-button {
+    border-color: var(--dark-55);
+}
+.oo-ui-buttonElement.oo-ui-widget-disabled > .oo-ui-buttonElement-button:hover {
+    cursor: not-allowed;
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
+    border-color: var(--dark-45);
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover {
+    border-color: var(--dark-55);
+}
+ div#bodyContent.mw-body-content div#mw-content-text div.mw-htmlform-ooui-wrapper.oo-ui-layout.oo-ui-panelLayout.oo-ui-panelLayout-padded.oo-ui-panelLayout-framed form.mw-htmlform.mw-htmlform-ooui.oo-ui-layout.oo-ui-formLayout fieldset.oo-ui-layout.oo-ui-labelElement.oo-ui-fieldsetLayout div.oo-ui-fieldsetLayout-group div.oo-ui-widget.oo-ui-widget-enabled div.oo-ui-layout.oo-ui-panelLayout.oo-ui-panelLayout-padded.oo-ui-panelLayout-framed {
+    background-color: var(--dark-20);
+}
+.oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
+    padding-left: 0.85714286em;
+    padding-right: 0.85714286em;
+}
+
+.oo-ui-buttonElement.oo-ui-widget-enabled > .oo-ui-buttonElement-button {
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+input#wpUploadFile {
+    background-color: var(--dark-15);
+    color: var(--white-90);
+    border: var(--border-dark-45);
+}
+
+input#wpDestFile {
+    background-color: var(--dark-15);
+    color: var(--white-90);
+    border: var(--border-dark-45);
+}
+
+select#wpLicense {
+    background-color: var(--dark-15);
+    color: var(--white-90);
+    border: var(--border-dark-45);
+}
+
+textarea#wpUploadDescription {
+    background-color: var(--dark-15);
+    color: var(--white-90);
+    border: var(--border-dark-45);
+}
+
+.uls-ime-menu-settings-item {
+    background-color: var(--dark-20);
+    color: var(--white-90);
+    border-top: var(--border-dark-45);
+}
+/* IME Selector - ::before triangle styling */
+.imeselector-menu::before {
+    border-bottom: 7px solid var(--dark-45);
+    z-index: 2;
+}
+.imeselector-menu {
+    background-color: var(--dark-25);
+    border: var(--border-dark-45);
+}
+.imeselector-menu .selectable-row-item {
+    color: var(--white-90);
+}
+.imeselector a, .ime-disable {
+    color: var(--dark-55);
+}
+.imeselector-menu .selectable-row:hover {
+    background-color: var(--dark-35);
+}
+.imeselector:hover {
+    background-color: var(--dark-10);
+    box-shadow: 0 0 0 0 transparent !important;
+}
+.ime-setting-caret {
+    margin-top: 6px;
+    border-top: 4px solid var(--white-90);
+}
+.tux-message-editor .messagekey .caret {
+    border-top: 4px solid var(--white-90);
+}
+.ime-list-title, .ime-lang-title {
+    background-color: var(--dark-20);
+    color: var(--white-90);
+    border-bottom: var(--border-dark-45);
+}
+.languagesettings-menu .menu-section {
+    color: var(--white-90);
+}
+.languagesettings-menu .menu-section .settings-text {
+    color: var(--white-90);
+}
+.languagesettings-menu .menu-section:hover .settings-text {
+    color: var(--white-90);
+}
+.languagesettings-menu .menu-section:focus {
+    border-color: var(--dark-50);
+}
+.languagesettings-menu h1 {
+    color: var(--white-90);
+}
+#languagesettings-settings-panel h3 {
+    color: var(--white-90);
+}
+#languagesettings-settings-panel h4 {
+    color: var(--white-90);
+}
+#languagesettings-settings-panel {
+    color: var(--white-90);
+    background: var(--dark-35);
+}
+.uls-language-settings-close-block {
+    background: var(--dark-25);
+}
+.uls-input-settings .uls-input-settings-inputmethods-list {
+    background: var(--dark-30);
+}
+.uls-menu {
+    background-color: var(--dark-25);
+    border: var(--border-dark-45);
+}
+.uls-language-block > ul > li:hover {
+    background-color: var(--dark-35);
+}
+.uls-language-block a {
+    color: var(--lightblue);
+}
+#languagesettings-panels .mw-ui-pressed {
+    background-color: var(--dark-45);
+    color: var(--white-90);
+    border-color: var(--dark-45);
+}
+.language-settings-buttons {
+    border-top: var(--border-dark-45);
+}
+.mw-ui-button {
+    background-color: var(--dark-20);
+    color: var(--white-90);
+    border: var(--border-dark-45);
+}
+.mw-ui-button:hover {
+    background-color: var(--dark-40);
+    color: var(--white-90);
+    border-color: var(--dark-45);
+}
+.mw-ui-button.mw-ui-progressive {
+    background-color: var(--dark-20);
+    color: #fff;
+    border: var(--border-dark-45);
+}
+.mw-ui-button.mw-ui-progressive:hover {
+    background-color: var(--dark-20);
+    border-color: var(--dark-45);
+}
+.oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle {
+    background-color: var(--dark-35);
+    color: var(--white-90);
+    border-color: var(--dark-45);
+}
+.oo-ui-dropdownWidget.oo-ui-widget-enabled.oo-ui-dropdownWidget-open .oo-ui-dropdownWidget-handle {
+    background-color: var(--dark-45);
+}
+.oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle:hover {
+    background-color: var(--dark-35);
+    border-color: var(--dark-45);
+}
+.oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle:active {
+    color: #000;
+    border-color: var(--dark-45);
+}
+#uls-settings-block {
+    background-color: var(--dark-20);
+    border-top: var(--border-dark-45);
+}
+.languagesettings-menu .menu-section:hover {
+    background-color: var(--dark-35);
+}
+.languagesettings-menu .menu-section.active {
+    color: var(--white-90);
+    background-color: var(--dark-35);
+    padding-left: 40px;
+    background-position: left 13px top 6px;
+    border-left-width: 3px;
+    border-left-color: var(--dark-40);
+}
+/**
+ * Patch 1
+ * Some translations stuff I missed
+ */
+input, textarea {
+    border: var(--border-dark-45);
+    background-color: var(--dark-15);
+    color: var(--white-90);
+}
+.tux-action-bar button:hover {
+    background-color: var(--dark-25);
+    background-image: linear-gradient(to bottom, var(--dark-30), var(--dark-25));
+}
+.tux-action-bar button {
+    background-color: var(--dark-25);
+    background-image: linear-gradient(to bottom, var(--dark-30), var(--dark-25));
+    border: var(--border-dark-45);
+    color: var(--white-90);
+}
+.tux-action-bar button:active, .tux-action-bar button.down {
+    background-color: var(--dark-25);
+    background-image: linear-gradient(to bottom, var(--dark-30), var(--dark-25));
+    border: var(--border-dark-45);
+}
+.tux-message-selector .more ul {
+    border: var(--border-dark-45);
+    border-top: var(--border-dark-45);
+    background: var(--dark-20);
+    left: 0px;
+}
+.tux-message-selector label {
+    color: var(--white-90);
+}
+.tux-message-filter-box {
+    border: var(--border-dark-45);
+}
+.tux-messagelist {
+    color: var(--white-90);
+}
+.tux-message-item {
+    border-bottom: var(--border-dark-45);
+    background-color: var(--dark-20);
+}
+.tux-message-item:hover {
+    background-color: var(--dark-35);
+}
+.ext-translate-container .tux-messagelist .tux-message-proofread:first-child .tux-message-item-compact {
+    border-top: var(--border-dark-45);
+}
+.ext-translate-container .tux-messagelist .tux-message-proofread .tux-message-item-compact {
+    background-color: var(--dark-20);
+    color: var(--white-90) !important;
+    border-bottom: var(--border-dark-45);
+    border-left: var(--border-dark-45);
+    border-right: var(--border-dark-45);
+}
+.ext-translate-container .tux-messagelist .tux-message-proofread .tux-message-item-compact:hover {
+    background-color: var(--dark-35);
+    color: var(--white-90) !important;
+}
+
+.tux-messagelist .tux-message-proofread .tux-proofread-source {
+    color: var(--white-90);
+}
+.tux-message-editor {
+    border: var(--border-dark-45);
+    background-color: var(--dark-25);
+}
+.tux-message-editor__caret::after {
+    border-right: 20px solid var(--dark-25);
+}
+.tux-message-editor__caret::before, .tux-message-editor__caret::after {
+    border-right: 19px solid var(--dark-25);
+}
+.mw-ui-button.mw-ui-quiet, .mw-ui-button.mw-ui-quiet.mw-ui-progressive, .mw-ui-button.mw-ui-quiet.mw-ui-destructive {
+    background-color: var(--dark-35);
+    color: var(--white-90);
+    border-color: var(--dark-45);
+}
+.mw-ui-button.mw-ui-quiet:hover, .mw-ui-button.mw-ui-quiet.mw-ui-progressive:hover, .mw-ui-button.mw-ui-quiet.mw-ui-destructive:hover {
+    background-color: var(--dark-35);
+    color: var(--white-90);
+    border-color: var(--dark-45);
+}
+.tux-message-editor .shortcutinfo {
+    color: var(--white-90);
+}
+.tux-message-item.translated {
+    background-color: var(--dark-20);
+}
+.tux-editor-insert-buttons .tux-editor-paste-original-button {
+    background: var(--dark-35) left center no-repeat;
+    background-image: linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2232%22 height=%2232%22 viewBox=%220 0 32 32%22%3E %3Cpath fill=%22%2354595d%22 d=%22M29.077 29.012c0 1.06-.86 1.92-1.92 1.92H4.844c-1.06 0-1.92-.86-1.92-1.92V4.042c0-1.06.86-1.92 1.92-1.92h22.313c1.06 0 1.92.86 1.92 1.92v24.97z%22/%3E %3Cpath fill=%22%23f8f9fa%22 stroke=%22%2354595d%22 stroke-width=%22.5%22 stroke-miterlimit=%2210%22 d=%22M5.368 4.054h21v24.35h-21z%22/%3E %3Cpath fill=%22%23a2a9b1%22 d=%22M7.743 8.896h15.625v2.872H7.743zM7.743 15.09h15.625v2.875H7.743zM7.743 21.287h6.125v2.873H7.743z%22/%3E %3Cpath fill=%22%23414042%22 d=%22M18.646 2.814V1.068h-5.292v1.746H10.46v2.338H21.54V2.814%22/%3E %3C/svg%3E");
+    background-size: 16px 16px;
+}
+.tux-editor-insert-buttons button {
+    border: var(--border-dark-45);
+    background: var(--dark-35);
+    color: var(--white-90);
+}
+.tux-messagelist .tux-message-pagemode .tux-pagemode-translation {
+    color: var(--dark-50);
+}
+.group-warning {
+    background: var(--dark-45);
+    padding: 5px !important;
+    color: var(--white-90);
+}
+.tux-notice {
+    background-color: var(--dark-15);
+    border: var(--border-dark-45);
+}
+.tux-message-item.translated, .tux-message-item.proofread {
+    background-color: var(--dark-20);
+}
+.tux-message-item.translated:hover, .tux-message-item.proofread:hover {
+    background-color: var(--dark-30);
+}
+.tux-list-translation {
+    color: var(--dark-55);
+}
+.tux-breadcrumb .grouplink + .grouplink::before {
+    border-left: 4px solid var(--white-90);
+}
+
+/**
+ * Tux Stats Table
+ */
+.statstable > * > tr > th {
+    background-color: var(--dark-20);
+    border: var(--border-dark-45);
+}
+.statstable > * > tr > td {
+    background-color: var(--dark-40);
+    border-left: var(--border-dark-45);
+    border-right: var(--border-dark-45);
+    color: var(--dark-5);
+}
+.statstable > * > tr.tux-statstable-even > td {
+    background-color: var(--dark-35);
+}
+.statstable > * > tr > td:nth-child(6)[data-sort-value="0.00000"] {
+    color: var(--dark-5) !important;
+}
+
+/**
+ * Patch 2
+ * More random stuff
+ */
+.tux-messagelist {
+    background-color: var(--dark-20);
+}
+.ext-translate-language-selector-label {
+    color: var(--white-90);
+}
+.ext-translate-container .tux-messagelist .tux-message-proofread {
+    background-color: var(--dark-25);
+}
+.tux-messagetable-loader {
+    color: var(--white-90);
+    background-color: var(--dark-15);
+}
+.tux-messagelist .tux-message-proofread .tux-proofread-translation {
+    color: var(--dark-50);
+}
+.tux-empty-list {
+    background-color: var(--dark-20);
+    border-bottom: var(--border-dark-45);
+}
+.tux-empty-list-guide {
+    color: var(--dark-50);
+}
+
+/* Checkboxes/Radio Buttons */
+.oo-ui-checkboxInputWidget [type="checkbox"] + span {
+    background-color: var(--dark-10);
+    border-color: var(--dark-45);
+}
+.oo-ui-radioInputWidget [type="radio"] + span {
+    background-color: var(--dark-10);
+    border-color: var(--dark-45);
+}
+.oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-inlined:hover .oo-ui-tagMultiselectWidget-handle {
+    border-color: var(--dark-45);
+}
+.oo-ui-tagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle {
+    background-color:  var(--dark-35);
+}
+.oo-ui-tagMultiselectWidget-handle > .oo-ui-tagMultiselectWidget-content > input {
+    color: var(--white-90);
+}
+.oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-inlined.oo-ui-flaggedElement-invalid .oo-ui-tagMultiselectWidget-handle, .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-inlined.oo-ui-flaggedElement-invalid:hover .oo-ui-tagMultiselectWidget-handle {
+    border-color: var(--red);
+}
+.oo-ui-textInputWidget.oo-ui-widget-enabled:hover .oo-ui-inputWidget-input {
+    border-color: var(--dark-45);
+}
+.oo-ui-tagItemWidget.oo-ui-widget-enabled:not(.oo-ui-tagItemWidget-fixed) {
+    background-color: var(--dark-20);
+}
+.mw-protectedpages-unknown {
+    color: var(--white-90);
+}
+.mw-sp-translate-edit-fields fieldset {
+    border: 1px solid var(--dark-45);
+}
+.mw-sp-translate-message-documentation {
+    background-color: var(--dark-20);
+}
+.mw-sp-translate-edit-fields a {
+    color: var(--blue);
+}
+.mw-sp-translate-edit-definition {
+    background-color: var(--dark-20);
+}
+.mw-translate-fuzzy {
+    background-color: var(--dark-45);
+    color: var(--dark-10);
+}

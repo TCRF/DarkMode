@@ -1,0 +1,129 @@
+/* TCRF.net - Dark Vector-specific CSS */
+/* Version: Gamma 1.0.3 */
+
+:root {
+ --bg-dark: hsl(120, 2%, 19%);
+ 
+ --dark-5: hsl(0, 0%, 5%);
+ --dark-10: hsl(0, 0%, 10%);
+ --dark-15: hsl(0, 0%, 15%);
+ --dark-20: hsl(0, 0%, 20%);
+ --dark-25: hsl(0, 0%, 25%);
+ --dark-30: hsl(0, 0%, 30%);
+ --dark-35: hsl(0, 0%, 35%);
+ --dark-40: hsl(0, 0%, 40%);
+ --dark-45: hsl(0, 0%, 45%);
+ --dark-50: hsl(0, 0%, 50%);
+ --dark-55: hsl(0, 0%, 55%);
+
+ --blue: hsl(220, 100%, 66%);
+ --lightblue: hsl(220, 100%, 80%);
+
+ --red: hsl(1, 100%, 66%);
+ --lightred: hsl(0, 70%, 70%);
+
+ --diff-red: hsl(1, 100%, 66%);
+ --diff-green: hsl(120, 100%, 66%);
+ 
+ --darkgreen: hsl(120, 50%, 40%);
+ --green: hsl(120, 100%, 66%);
+ --lightgreen: hsl(120, 100%, 87%);
+
+ --orange: hsl(30, 100%, 55%);
+ 
+ --lightyellow: hsl(45, 100%, 50%);
+ --yellow: hsl(45, 50%, 20%);
+
+ --white-90: hsl(0, 0%, 90%);
+
+ --border-radius-2: 2px;
+ --border-dark-45: 1px solid var(--dark-45);
+}
+
+/* Vector Menu SVGs */
+.vectorTabs #ca-watch.icon a 
+{
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/vector-watch.svg");
+}
+.vectorTabs #ca-unwatch.icon a 
+{
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/vector-watch-hover.svg");
+}
+.vectorTabs #ca-watch.icon a:hover 
+{
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/vector-unwatch.svg");
+}
+.vectorTabs #ca-unwatch.icon a:hover 
+{
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/vector-unwatch.svg");
+}
+.vectorTabs #ca-watch.icon a:focus 
+{
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/vector-watch.svg");
+}
+.vectorTabs #ca-unwatch.icon a:focus 
+{
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/vector-watch-hover.svg");
+}
+.vectorMenu h3 span::after 
+{
+    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDark/main/assets/more-dropdown.svg");
+}
+/* "More" vectormenu option */
+.vectorMenu h3 span 
+{
+    color: var(--lightblue);
+    font-weight: bold;
+}
+.vectorMenu li a 
+{
+    color: var(--lightblue);
+    background-color: var(--dark-25);
+    font-weight: bold;
+}
+.vectorMenu .menu 
+{
+    border: var(--border-dark-45);
+}
+
+/* Vector Tabs */
+.vectorTabs li 
+{
+    background-image: linear-gradient(to top, var(--dark-25) 0.063em, var(--dark-15) 100%);
+    font-weight: bold;
+}
+.vectorTabs li a 
+{
+    color: var(--lightblue);
+}
+.vectorTabs, .vectorTabs span, #mw-head .vectorMenu h3 
+{
+    background-image: linear-gradient(to top, var(--dark-45) 0, var(--dark-15) 100%);
+}
+.vectorTabs .selected 
+{
+    background-image: linear-gradient(to top, var(--dark-25) 0.063em, var(--dark-15) 100%);
+    background-color: var(--dark-25);
+}
+.vectorTabs .selected a, .vectorTabs .selected a:visited 
+{
+    color: var(--blue);
+}
+.vectorMenu h3:hover span, .vectorMenu h3:focus span 
+{
+    color: var(--lightblue);
+}
+
+/* These were fixes for something, but I don't remember what. */
+.skin-vector .uls-menu 
+{
+    border-color: var(--dark-45);
+}
+.skin-vector .uls-lcd-region-title 
+{
+    color: var(--white-90);
+}
+.skin-vector .uls-search 
+{
+    border-bottom-color: var(--dark-45);
+}

@@ -1,0 +1,11 @@
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+ <title>bullet list</title>
+
+ <g>
+  <title>Layer 1</title>
+  <path fill="#e5e5e5" id="svg_1" d="m7,15l12,0l0,2l-12,0l0,-2zm0,-6l12,0l0,2l-12,0l0,-2zm0,-6l12,0l0,2l-12,0l0,-2z"/>
+  <circle fill="#e5e5e5" id="svg_2" r="2" cy="4" cx="3"/>
+  <circle fill="#e5e5e5" id="svg_3" r="2" cy="10" cx="3"/>
+  <circle fill="#e5e5e5" id="svg_4" r="2" cy="16" cx="3"/>
+ </g>
+</svg>
