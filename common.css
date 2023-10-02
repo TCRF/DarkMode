@@ -330,239 +330,239 @@ html.client-js body.mw-rcfilters-enabled.mediawiki.ltr.sitedir-ltr.mw-hide-empty
 
 /* Revamped Translation Progress Icons */
 /* To do: Remake these in SVG */
-.mw-pt-progress--stub { background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/prog1.svg"); }
-.mw-pt-progress--low { background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/prog2.svg"); }
-.mw-pt-progress--med { background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/prog3.svg"); }
-.mw-pt-progress--high { background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/prog4.svg"); }
-.mw-pt-progress--complete { background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/prog5.svg"); }
+.mw-pt-progress--stub { background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/prog1.svg"); }
+.mw-pt-progress--low { background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/prog2.svg"); }
+.mw-pt-progress--med { background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/prog3.svg"); }
+.mw-pt-progress--high { background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/prog4.svg"); }
+.mw-pt-progress--complete { background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/prog5.svg"); }
 
 /* SVG Icons */
 #searchButton {
-  background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/search.svg");
+  background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/search.svg");
 }
 #pt-uls .uls-trigger::before { 
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/language.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/language.svg");
     opacity: 1.0;
 }
 #mw-indicator-mw-helplink a {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/help.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/help.svg");
 }
 .oo-ui-icon-signature, .mw-ui-icon-signature::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/signature.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/signature.svg");
 }
 .oo-ui-icon-help, .mw-ui-icon-help::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/help2.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/help2.svg");
 }
 .oo-ui-icon-helpNotice, .mw-ui-icon-helpNotice::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/help.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/help.svg");
 }
 .oo-ui-indicator-down {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/down.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/down.svg");
 }
 .oo-ui-icon-checkAll, .mw-ui-icon-checkAll::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/check-all.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/check-all.svg");
 }
 .oo-ui-icon-menu, .mw-ui-icon-menu::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/menu.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/menu.svg");
 }
 .oo-ui-icon-play, .mw-ui-icon-play::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/play.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/play.svg");
 }
 .oo-ui-icon-close, .mw-ui-icon-close::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/close.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/close.svg");
 }
 .oo-ui-icon-edit, .mw-ui-icon-edit::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/edit.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/edit.svg");
 }
 .oo-ui-icon-bookmark, .mw-ui-icon-bookmark::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/bookmark.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/bookmark.svg");
 }
 .oo-ui-icon-trash, .mw-ui-icon-trash::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/trash.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/trash.svg");
 }
 .oo-ui-icon-settings, .mw-ui-icon-settings::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/settings.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/settings.svg");
 }
 .oo-ui-icon-article, .mw-ui-icon-article::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/article.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/article.svg");
 }
 .oo-ui-icon-tag, .mw-ui-icon-tag::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/tag.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/tag.svg");
 }
 .oo-ui-icon-search, .mw-ui-icon-search::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/search.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/search.svg");
 }
 .oo-ui-icon-feedback, .mw-ui-icon-feedback::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/feedback.svg") !important;
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/feedback.svg") !important;
 }
 .oo-ui-image-progressive.oo-ui-icon-feedback, .mw-ui-icon-feedback-progressive::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/feedback.svg") !important;
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/feedback.svg") !important;
 }
 .oo-ui-icon-highlight, .mw-ui-icon-highlight::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/highlight.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/highlight.svg");
 }
 .oo-ui-icon-next, .mw-ui-icon-next::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/next.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/next.svg");
 }
 .oo-ui-icon-previous, .mw-ui-icon-previous::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/previous.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/previous.svg");
 }
 .oo-ui-icon-check, .mw-ui-icon-check::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/check.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/check.svg");
 }
 .oo-ui-image-invert.oo-ui-icon-stop, .mw-ui-icon-stop-invert::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/invert.svg") !important;
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/invert.svg") !important;
 }
 .oo-ui-icon-stop, .mw-ui-icon-stop::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/invert.svg") !important;
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/invert.svg") !important;
 }
 .oo-ui-icon-reload, .mw-ui-icon-reload::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/reload.svg") !important;
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/reload.svg") !important;
 }
 .oo-ui-icon-code, .mw-ui-icon-code::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/code.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/code.svg");
 }
 .oo-ui-icon-expand, .mw-ui-icon-expand::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/expand.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/expand.svg");
 }
 .oo-ui-icon-collapse, .mw-ui-icon-collapse::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/collapse.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/collapse.svg");
 }
 #pt-anonuserpage, #pt-userpage a {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/avatar.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/avatar.svg");
     margin-top: 3px;
     padding-top: 0.3em !important;
 }
 .imeselector {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/imeselector.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/imeselector.svg");
     background-color: var(--dark-15);
     box-shadow: 0 0 0 0 transparent !important;
 }
 .uls-ime-disable-link {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/imeselector-disabled.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/imeselector-disabled.svg");
 }
 .imeselector-menu .ime-checked {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/ime-check.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/ime-check.svg");
 }
 .uls-ime-more-settings-link {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/ime-settings.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/ime-settings.svg");
     border-left: var(--border-dark-45);
 }
 .languagesettings-menu .menu-section.display-settings-block {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/ime-display.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/ime-display.svg");
 }
 #uls-settings-block > button.display-settings-block {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/ime-display.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/ime-display.svg");
 }
 #uls-settings-block > button.input-settings-block {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/imeselector.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/imeselector.svg");
 }
 .languagesettings-menu .menu-section.input-settings-block {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/imeselector.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/imeselector.svg");
 }
 .uls-search-label {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/search.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/search.svg");
 }
 /* Tux Translation System - SVG Icons */
 .tux-action-bar .translate-mode-button::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/tux-translate.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/tux-translate.svg");
 }
 .tux-action-bar .page-mode-button::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/tux-page.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/tux-page.svg");
 }
 .tux-action-bar .proofread-mode-button::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/tux-proofread.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/tux-proofread.svg");
 }
 .tux-message-filter-wrapper {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/tux-search.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/tux-search.svg");
 }
 .grid .tux-message-editor .close {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/tux-close.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/tux-close.svg");
 }
 .tux-message-editor .editor-expand {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/tux-expand.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/tux-expand.svg");
 }
 .message-desc-edit {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/tux-edit.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/tux-edit.svg");
 }
 .tux-list-edit a {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/tux-edit.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/tux-edit.svg");
 }
 .tux-status-translated, .tux-status-proofread {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/tux-translated.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/tux-translated.svg");
 }
 .tux-pagemode-status.untranslated {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/tux-untranslated.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/tux-untranslated.svg");
 }
 .tux-notice-message.diff {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/tux-clock.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/tux-clock.svg");
 }
 .uls-icon-close {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/tux-close.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/tux-close.svg");
 }
 .uls-icon-back {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/lang-back.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/lang-back.svg");
     border-right: var(--border-dark-45);
 }
 .client-js .sortable:not(.jquery-tablesorter) > * > tr:first-child > th:not(.unsortable), .jquery-tablesorter th.headerSort {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/table-sorter.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/table-sorter.svg");
 }
 /* Editor SVGs */
 .oo-ui-icon-bold, .mw-ui-icon-bold::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-bold.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-bold.svg");
 }
 .oo-ui-icon-italic, .mw-ui-icon-italic::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-italic.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-italic.svg");
 }
 .oo-ui-icon-link, .mw-ui-icon-link::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-link.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-link.svg");
 }
 .oo-ui-icon-image, .mw-ui-icon-image::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-image.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-image.svg");
 }
 .oo-ui-icon-reference, .mw-ui-icon-reference::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-reference.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-reference.svg");
 }
 .oo-ui-icon-listBullet, .mw-ui-icon-listBullet::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-listbullet.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-listbullet.svg");
 }
 .oo-ui-icon-listNumbered, .mw-ui-icon-listNumbered::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-listnumbered.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-listnumbered.svg");
 }
 .oo-ui-icon-noWikiText, .mw-ui-icon-noWikiText::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-nowikitext.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-nowikitext.svg");
 }
 .oo-ui-icon-newline, .mw-ui-icon-newline::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-newline.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-newline.svg");
 }
 .oo-ui-icon-bigger, .mw-ui-icon-bigger::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-bigger.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-bigger.svg");
 }
 .oo-ui-icon-smaller, .mw-ui-icon-smaller::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-smaller.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-smaller.svg");
 }
 .oo-ui-icon-superscript, .mw-ui-icon-superscript::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-superscript.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-superscript.svg");
 }
 .oo-ui-icon-subscript, .mw-ui-icon-subscript::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-subscript.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-subscript.svg");
 }
 .oo-ui-icon-imageGallery, .mw-ui-icon-imageGallery::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-imagegallery.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-imagegallery.svg");
 }
 .oo-ui-icon-articleRedirect, .mw-ui-icon-articleRedirect::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-articleredirect.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-articleredirect.svg");
 }
 .oo-ui-icon-table, .mw-ui-icon-table::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-table.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-table.svg");
 }
 .oo-ui-icon-articleSearch, .mw-ui-icon-articleSearch::before {
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/assets/editor-articlesearch.svg");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/assets/editor-articlesearch.svg");
 }
 /* Main body */
 body {
     background-color: var(--bg-dark);
-    background-image: url("https://raw.githubusercontent.com/ImguRandom/TCRFDarkMode/main/tcrf-dark.png");
+    background-image: url("https://raw.githubusercontent.com/TCRF/DarkMode/main/tcrf-dark.png");
 }
 
 /* Top of page gradient */
