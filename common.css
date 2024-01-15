@@ -2103,3 +2103,8 @@ input, textarea {
     background-color: var(--dark-45);
     color: var(--dark-10);
 }
+
+.mw-widgets-datetime-dateTimeInputWidget-handle{
+  background-color: var(--dark-35) !important;
+  color:  var(--white-90) !important;
+}
