@@ -1,6 +1,3 @@
-/* TCRF.net - Dark Monobook-specific CSS */
-/* Version: Gamma 1.0.0 */
-
 :root {
  --bg-dark: hsl(120, 2%, 19%);
  
@@ -86,4 +83,36 @@
 }
 .tools-inline li.selected a {
 	color: var(--white-90);
+}
+
+.mw-indicators {
+  margin: 0 0 0 1em;
+}
+#personal .dropdown {
+	background-color: var(--dark-25);
+}
+#pt-anonuserpage, #pt-userpage a {
+	background-image: none;
+}
+.tools-inline li[id^="ca-nstab-"] a {
+	background-image: url(/skins/Timeless/resources/images/page-grey.png?3755d);
+}
+#ca-talk a {
+	background-image: url(/skins/Timeless/resources/images/talk-grey.png?33663);
+}
+#ca-watch a {
+	background-image: url(/skins/Timeless/resources/images/star.png?ecba8);
+}
+#ca-edit a {
+	background-image: url(/skins/Timeless/resources/images/pencil-grey.png?23255);
+}
+#ca-history a {
+	background-image: url(/skins/Timeless/resources/images/clock-grey.png?9dce9);
+}
+#personal h2 {
+	padding-bottom: 0em;
+	background-image: url(/skins/Timeless/resources/images/user-grey.png?0ed80);
+}
+#personal h2::after {
+	background-image: url(/skins/Timeless/resources/images/arrow-down-grey.png?fe8a6);
 }
