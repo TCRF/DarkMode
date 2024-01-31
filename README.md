@@ -7,6 +7,7 @@ A custom "dark mode" theme I created for [The Cutting Room Floor](https://tcrf.n
 2. Check [your Preferences on TCRF](https://tcrf.net/Special:Preferences#mw-prefsection-rendering) and see which skin you have selected. It will either be **Vector** or **Monobook**. Most people will have Vector enabled by default, but it is ideal to check.
 3. **If you use Vector:** Copy the contents of [this repo's vector.css file](https://raw.githubusercontent.com/TCRF/DarkMode/main/vector.css) into [your userspace vector.css](https://tcrf.net/Special:MyPage/vector.css).
 4. **If you use Monobook:** Copy the contents of [this repo's monobook.css file](https://raw.githubusercontent.com/TCRF/DarkMode/main/monobook.css) into [your userspace monobook.css](https://tcrf.net/Special:MyPage/monobook.css).
+5. **If you use Timeless:** Copy the contents of [this repo's timeless.css file](https://raw.githubusercontent.com/TCRF/DarkMode/main/timeless.css) into [your userspace timeless.css](https://tcrf.net/Special:MyPage/timeless.css).
 
 **If you do not have an account on TCRF.net:**
 
