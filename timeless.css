@@ -1,0 +1,89 @@
+/* TCRF.net - Dark Monobook-specific CSS */
+/* Version: Gamma 1.0.0 */
+
+:root {
+ --bg-dark: hsl(120, 2%, 19%);
+ 
+ --dark-5: hsl(0, 0%, 5%);
+ --dark-10: hsl(0, 0%, 10%);
+ --dark-15: hsl(0, 0%, 15%);
+ --dark-20: hsl(0, 0%, 20%);
+ --dark-25: hsl(0, 0%, 25%);
+ --dark-30: hsl(0, 0%, 30%);
+ --dark-35: hsl(0, 0%, 35%);
+ --dark-40: hsl(0, 0%, 40%);
+ --dark-45: hsl(0, 0%, 45%);
+ --dark-50: hsl(0, 0%, 50%);
+ --dark-55: hsl(0, 0%, 55%);
+
+ --blue: hsl(220, 100%, 66%);
+ --lightblue: hsl(220, 100%, 80%);
+
+ --red: hsl(1, 100%, 66%);
+ --lightred: hsl(0, 70%, 70%);
+
+ --diff-red: hsl(1, 100%, 66%);
+ --diff-green: hsl(120, 100%, 66%);
+ 
+ --green: hsl(120, 100%, 66%);
+ --lightgreen: hsl(120, 100%, 87%);
+ 
+ --lightyellow: hsl(45, 100%, 50%);
+ --yellow: hsl(45, 50%, 20%);
+
+ --white-90: hsl(0, 0%, 90%);
+
+ --border-radius-2: 2px;
+ --border-dark-45: 1px solid var(--dark-45);
+}
+
+#mw-site-navigation .sidebar-chunk {
+	background-color: var( --dark-25);
+	border: solid var(--dark-40);
+}
+
+#mw-content {
+	background-color: var( --dark-25);
+	border: solid var(--dark-40);
+}
+
+#mw-related-navigation .sidebar-chunk {
+	background-color: var( --dark-25);
+	border: solid var(--dark-40);
+}
+
+#mw-content-container {
+	background-color: var( --bg-dark);
+}
+
+#localNotice {
+	background-color: var( --dark-25);
+	border: hidden;
+}
+
+#mw-header-container {
+	background-color: var( --dark-40);
+}
+#mw-header {
+	background-color: var(--dark-40);
+}
+
+#p-logo-text a.long {
+	background-color: var(--dark-40);
+	color: var(--white-90);
+}
+.color-left {
+	background-color: var(--dark-10);
+}
+.color-middle-container {
+	background-color: var(--dark-10);
+}
+.color-middle {
+	background-color: var(--dark-10);
+}
+.color-right {
+	background-color: var(--dark-10);
+}
+.tools-inline li.selected a {
+	color: var(--white-90);
+}
