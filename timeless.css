@@ -119,3 +119,6 @@
 .mw-datatable > tr > td, .wikitable > tr > td, .mw-datatable > * > tr > td, .wikitable > * > tr > td {
 	background-color: var(--dark-30);
 }
+.mw-body {
+	border: none;
+}
