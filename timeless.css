@@ -116,3 +116,6 @@
 #personal h2::after {
 	background-image: url(/skins/Timeless/resources/images/arrow-down-grey.png?fe8a6);
 }
+.mw-datatable > tr > td, .wikitable > tr > td, .mw-datatable > * > tr > td, .wikitable > * > tr > td {
+	background-color: var(--dark-30);
+}
