@@ -2108,3 +2108,47 @@ input, textarea {
   background-color: var(--dark-35) !important;
   color:  var(--white-90) !important;
 }
+
+.oo-ui-tagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle {
+	background-color: var(--dark-15);
+}
+
+.mw-apisandbox-optionalWidget-cover {
+	background-color: var(--dark-15);
+}
+
+.oo-ui-tagItemWidget.oo-ui-widget-enabled:not(.oo-ui-tagItemWidget-fixed) {
+	background-color: var(--dark-20);
+}
+
+.oo-ui-outlineOptionWidget.oo-ui-optionWidget-selected {
+	background-color: var(--dark-30);
+}
+
+.oo-ui-toggleSwitchWidget.oo-ui-widget-enabled {
+	background-color: var(--dark-10); !important
+}
+
+.oo-ui-toggleSwitchWidget.oo-ui-widget-enabled:hover {
+	background-color: var(--dark-20);
+}
+
+.mw-widgets-datetime-calendarWidget{
+	background-color: var(--dark-20);
+}
+
+#mw-allmessagestable .am_actual{
+	color: black;
+}
+
+#mw-allmessagestable .am_default{
+	color: black;
+}
+
+ul.fileupload-results li.ful-error{
+	color: black;
+}
+
+ul.fileupload-results li.ful-success {
+	color: black;
+}
